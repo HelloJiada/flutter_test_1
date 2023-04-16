@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jadeapp/common/routes/routest.dart';
+import 'package:harucat/common/routes/routest.dart';
 
 class ChatHomePage extends StatefulWidget {
   const ChatHomePage({super.key});
@@ -17,11 +17,11 @@ navigatToContactPage(context) {
   Widget build(BuildContext context) {
     return Scaffold(
       body: const Center(
-        child: Text('Chat Home Page',),
+        child: Text(' Home Page 1',),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () => navigatToContactPage(context),
-        child: const Icon(Icons.chat),
+        child: const Icon(Icons.edit),
       ),
     );
   }

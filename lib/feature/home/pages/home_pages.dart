@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:jadeapp/common/widgets/custom_icon_buttom.dart';
-import 'package:jadeapp/feature/home/pages/call_home_page.dart';
-import 'package:jadeapp/feature/home/pages/chat_home_page.dart';
-import 'package:jadeapp/feature/home/pages/status_home_page.dart';
+import 'package:harucat/common/widgets/custom_icon_buttom.dart';
+import 'package:harucat/feature/home/pages/call_home_page.dart';
+import 'package:harucat/feature/home/pages/chat_home_page.dart';
+import 'package:harucat/feature/home/pages/status_home_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -14,12 +14,12 @@ class HomePage extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           title: const Text(
-            'JadeAPP',
+            'HaruCat',
             style: TextStyle(letterSpacing: 1),
           ),
           elevation: 1,
           actions: [
-            CustomIconButton(onTap: () {}, icon: Icons.search),
+            // CustomIconButton(onTap: () {}, icon: Icons.search),
             CustomIconButton(onTap: () {}, icon: Icons.more_vert),
           ],
           bottom: const TabBar(
@@ -28,13 +28,13 @@ class HomePage extends StatelessWidget {
             splashFactory: NoSplash.splashFactory,
             tabs: [
               Tab(
-                text: 'RECOMMEND',
+                text: '早睡',
               ),
               Tab(
-                text: 'FOCUS',
+                text: '早起',
               ),
               Tab(
-                text: 'NEARBY',
+                text: '日记',
               ),
             ],
           ),

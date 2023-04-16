@@ -3,9 +3,9 @@ import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:jadeapp/common/extension/custom_them_extension.dart';
-import 'package:jadeapp/common/helper/show_alert_dialog.dart';
-import 'package:jadeapp/common/widgets/custom_icon_buttom.dart';
+import 'package:harucat/common/extension/custom_them_extension.dart';
+import 'package:harucat/common/helper/show_alert_dialog.dart';
+import 'package:harucat/common/widgets/custom_icon_buttom.dart';
 import 'package:photo_manager/photo_manager.dart';
 
 class ImagePickerPage extends StatefulWidget {

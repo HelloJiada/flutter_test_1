@@ -1,13 +1,13 @@
 // import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:jadeapp/common/routes/routest.dart';
-import 'package:jadeapp/common/theme/dark_theme.dart';
-import 'package:jadeapp/common/theme/light_theme.dart';
-import 'package:jadeapp/feature/auth/pages/login_page.dart';
-import 'package:jadeapp/feature/contact/pages/contact_page.dart';
-import 'package:jadeapp/feature/home/pages/home_pages.dart';
-import 'package:jadeapp/feature/welcome/pages/welcome_page.dart';
+import 'package:harucat/common/routes/routest.dart';
+import 'package:harucat/common/theme/dark_theme.dart';
+import 'package:harucat/common/theme/light_theme.dart';
+import 'package:harucat/feature/auth/pages/login_page.dart';
+import 'package:harucat/feature/contact/pages/contact_page.dart';
+import 'package:harucat/feature/home/pages/home_pages.dart';
+import 'package:harucat/feature/welcome/pages/welcome_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'feature/auth/pages/user_info_page.dart';
 import 'feature/auth/pages/verifcation_page.dart';
@@ -50,7 +50,7 @@ class MyApp extends StatelessWidget {
       theme: lightTheme(),
       darkTheme: darkTheme(),
       themeMode: ThemeMode.system,
-      home: welcomePage(),
+      home: const welcomePage(),
       onGenerateRoute: Routes.onGrenerateRoute,
     );
   }

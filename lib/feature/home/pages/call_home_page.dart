@@ -12,11 +12,11 @@ class _CallHomePageState extends State<CallHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: const Center(
-        child: Text('Call Home Page'),
+        child: Text(' Home Page 2'),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        child: const Icon(Icons.call),
+        child: const Icon(Icons.edit),
       ),
     );
   }

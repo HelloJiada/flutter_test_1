@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:jadeapp/common/utils/coloors.dart';
-import 'package:jadeapp/common/widgets/custom_icon_buttom.dart';
+import 'package:harucat/common/utils/coloors.dart';
+import 'package:harucat/common/widgets/custom_icon_buttom.dart';
 
 class LanguageButton extends StatelessWidget {
   const LanguageButton({super.key});

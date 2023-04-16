@@ -13,25 +13,25 @@ class PrivacyAndTerms extends StatelessWidget {
       child: RichText(
         textAlign: TextAlign.center,
         text: const TextSpan(
-            text: 'Read our',
+            text: '阅读我们的',
             style: TextStyle(
               color: Colors.black87,
               height: 1.5,
             ),
             children: [
               TextSpan(
-                  text: ' Privacy Policy',
+                  text: ' 隐私政策',
                   style: TextStyle(
                     color: Colors.blue,
                     height: 1.5,
                   )),
               TextSpan(
-                  text: ' Tap "Agree and continue" to accept the ',
+                  text: ' 轻按“同意并继续”接受 ',
                   style: TextStyle(
                     color: Colors.black87,
                   )),
               TextSpan(
-                  text: 'Terms of Services.',
+                  text: '服务条款.',
                   style: TextStyle(
                     color: Colors.blue,
                   ))

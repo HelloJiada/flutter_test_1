@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:jadeapp/common/extension/custom_them_extension.dart';
+import 'package:harucat/common/extension/custom_them_extension.dart';
 import '../../common/utils/coloors.dart';
 
 ThemeData lightTheme() {

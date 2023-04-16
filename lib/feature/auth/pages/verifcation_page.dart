@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:jadeapp/common/extension/custom_them_extension.dart';
-import 'package:jadeapp/common/routes/routest.dart';
-import 'package:jadeapp/common/widgets/custom_icon_buttom.dart';
-import 'package:jadeapp/feature/auth/widgets/custom_text_field.dart';
+import 'package:harucat/common/extension/custom_them_extension.dart';
+import 'package:harucat/common/routes/routest.dart';
+import 'package:harucat/common/widgets/custom_icon_buttom.dart';
+import 'package:harucat/feature/auth/widgets/custom_text_field.dart';
 
 class VerifcationPage extends StatefulWidget {
-  const VerifcationPage({super.key, required this.verifcationId, required this.phoneNumber});
+   const VerifcationPage({super.key,  required this.verifcationId,  required this.phoneNumber});
   final String verifcationId;
   final String phoneNumber;
 
@@ -35,7 +35,7 @@ class _VerifcationPageState extends State<VerifcationPage> {
         backgroundColor: Theme.of(context).backgroundColor,
         elevation: 0,
         title: Text(
-          'Verify your number',
+          '核实你的电话号码',
           style: TextStyle(color: context.theme.authAppbarTextColor),
         ),
         centerTitle: true,
@@ -57,11 +57,12 @@ class _VerifcationPageState extends State<VerifcationPage> {
                       height: 1.5,
                     ),
                     children: [
-                      const TextSpan(
-                        text: "You've tried to register +11111. ",
+                       TextSpan(
+                        text: "您尝试注册,",
                       ),
+                     
                       TextSpan(
-                          text: 'Wrong number?',
+                          text: '请输入正确的验证码',
                           style: TextStyle(
                             color: context.theme.blueColor,
                           ))
@@ -79,7 +80,7 @@ class _VerifcationPageState extends State<VerifcationPage> {
                 hintText: '- - -  - - -',
                 fontSize: 30,
                 onChanged: (value) {
-                  if (value.length == 6){
+                  if (value.length == 6 && value.contains('888888')){
                     Navigator.of(context).pushNamedAndRemoveUntil(Routes.userInfo, (route) => false);
                   }
                 },
@@ -89,7 +90,7 @@ class _VerifcationPageState extends State<VerifcationPage> {
               height: 20,
             ),
             Text(
-              'Enter 6-digit code',
+              '输入6位验证码,注:888888',
               style: TextStyle(
                 color: context.theme.greyColor,
               ),
@@ -107,7 +108,7 @@ class _VerifcationPageState extends State<VerifcationPage> {
                   width: 10,
                 ),
                 Text(
-                  'Resend SMS',
+                  '发送验证码',
                   style: TextStyle(
                     color: context.theme.greyColor,
                   ),
@@ -133,7 +134,7 @@ class _VerifcationPageState extends State<VerifcationPage> {
                   width: 10,
                 ),
                 Text(
-                  'Call me',
+                  '语音短信',
                   style: TextStyle(
                     color: context.theme.greyColor,
                   ),

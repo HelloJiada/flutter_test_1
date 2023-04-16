@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jadeapp/common/extension/custom_them_extension.dart';
+import 'package:harucat/common/extension/custom_them_extension.dart';
 
 class ShortHBar extends StatelessWidget {
   const ShortHBar({super.key, this.height, this.width, this.color});

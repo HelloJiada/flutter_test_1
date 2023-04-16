@@ -12,7 +12,7 @@ class _StatusHomePageState extends State<StatusHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: const Center(
-        child: Text('Status Home Page'),
+        child: Text(' Home Page 2'),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},

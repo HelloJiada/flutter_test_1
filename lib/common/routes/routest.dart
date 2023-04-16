@@ -1,11 +1,12 @@
 // import 'dart:js';
 
 import 'package:flutter/material.dart';
-import 'package:jadeapp/feature/auth/pages/login_page.dart';
-import 'package:jadeapp/feature/auth/pages/user_info_page.dart';
-import 'package:jadeapp/feature/auth/pages/verifcation_page.dart';
-import 'package:jadeapp/feature/contact/pages/contact_page.dart';
-import 'package:jadeapp/feature/welcome/pages/welcome_page.dart';
+import 'package:harucat/feature/auth/pages/login_page.dart';
+import 'package:harucat/feature/auth/pages/user_info_page.dart';
+import 'package:harucat/feature/auth/pages/verifcation_page.dart';
+import 'package:harucat/feature/contact/pages/contact_page.dart';
+import 'package:harucat/feature/home/pages/home_pages.dart';
+import 'package:harucat/feature/welcome/pages/welcome_page.dart';
 
 class Routes {
   static const String welcome = 'welcome';
@@ -13,6 +14,7 @@ class Routes {
   static const String verification = 'verification';
   static const String userInfo = 'user-info';
   static const String contact = 'contact';
+  static const String home = 'home';
 
   static Route<dynamic> onGrenerateRoute(RouteSettings settings) {
     switch (settings.name) {
@@ -33,6 +35,8 @@ class Routes {
         return MaterialPageRoute(builder: (context) => const UserInfoPage());
       case contact:
         return MaterialPageRoute(builder: (context) => const ContactPage());
+case home:
+        return MaterialPageRoute(builder: (context) => const HomePage());
 
       default:
         return MaterialPageRoute(
